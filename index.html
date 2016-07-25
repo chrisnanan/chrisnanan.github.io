@@ -1,7 +1,17 @@
-<h1>welcome to stock exchange</h1
-<div style="color:#FF0033">
- The color of this text is the same as the one of the line:
-  <div style="background:currentcolor; height:1px"></div>
- Some more text.
-</div>
-<p style="font-weight:bold;color:#000000;background-color:#FF2F0F;border: 5px solid #1717FF;letter-spacing:1pt;word-spacing:2pt;font-size:12px;text-align:center;font-family:arial black, sans-serif;line-height:1;">your not on thy lvl</p>
+#include <stdio.h>
+int main()
+{
+    int n, i, sum = 0;
+    
+    printf("Enter a positive integer: ");
+    scanf("%d",&n);
+
+    for(i=1; i <= n; ++i)
+    {
+        sum += i;   // sum = sum+i;
+    }
+
+    printf("Sum = %d",sum);
+
+    return 0;
+}
